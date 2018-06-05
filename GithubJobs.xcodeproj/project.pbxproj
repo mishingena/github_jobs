@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B267F83A20C53C5F00B0CC4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F83920C53C5F00B0CC4C /* AppDelegate.m */; };
-		B267F83D20C53C5F00B0CC4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F83C20C53C5F00B0CC4C /* ViewController.m */; };
-		B267F84020C53C5F00B0CC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B267F83E20C53C5F00B0CC4C /* Main.storyboard */; };
 		B267F84220C53C6000B0CC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B267F84120C53C6000B0CC4C /* Assets.xcassets */; };
 		B267F84520C53C6000B0CC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B267F84320C53C6000B0CC4C /* LaunchScreen.storyboard */; };
 		B267F84820C53C6000B0CC4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F84720C53C6000B0CC4C /* main.m */; };
-		B267F85220C53C6000B0CC4C /* GithubJobsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F85120C53C6000B0CC4C /* GithubJobsTests.m */; };
+		B267F85E20C53C9600B0CC4C /* JobsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F85D20C53C9600B0CC4C /* JobsListViewController.m */; };
+		B2DC8D4720C53E08002590B4 /* JobItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D4620C53E08002590B4 /* JobItem.m */; };
+		B2DC8D4A20C53F2E002590B4 /* JobsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D4920C53F2E002590B4 /* JobsListViewModel.m */; };
+		B2DC8D5020C54BA4002590B4 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D4F20C54BA4002590B4 /* NetworkService.m */; };
+		B2DC8D5320C5685F002590B4 /* JobDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D5220C5685F002590B4 /* JobDetailsViewController.m */; };
+		B2DC8D5620C569E1002590B4 /* JobViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D5520C569E1002590B4 /* JobViewModel.m */; };
+		B2DC8D5720C569E7002590B4 /* JobsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D4920C53F2E002590B4 /* JobsListViewModel.m */; };
+		B2DC8D5A20C5F236002590B4 /* CacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D5920C5F236002590B4 /* CacheService.m */; };
+		B2DC8D5E20C674C0002590B4 /* JobListViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D5D20C674C0002590B4 /* JobListViewModelTests.m */; };
+		B2DC8D5F20C6750C002590B4 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D4F20C54BA4002590B4 /* NetworkService.m */; };
+		B2DC8D6020C6750E002590B4 /* CacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D5920C5F236002590B4 /* CacheService.m */; };
+		B2DC8D6120C67515002590B4 /* JobItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC8D4620C53E08002590B4 /* JobItem.m */; };
+		B2DC8D6420C67D50002590B4 /* job_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B2DC8D6320C67D50002590B4 /* job_list.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +40,28 @@
 		B267F83520C53C5F00B0CC4C /* GithubJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B267F83820C53C5F00B0CC4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B267F83920C53C5F00B0CC4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B267F83B20C53C5F00B0CC4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B267F83C20C53C5F00B0CC4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B267F83F20C53C5F00B0CC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B267F84120C53C6000B0CC4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B267F84420C53C6000B0CC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B267F84620C53C6000B0CC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B267F84720C53C6000B0CC4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B267F84D20C53C6000B0CC4C /* GithubJobsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubJobsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B267F85120C53C6000B0CC4C /* GithubJobsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubJobsTests.m; sourceTree = "<group>"; };
 		B267F85320C53C6000B0CC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B267F85C20C53C9600B0CC4C /* JobsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsListViewController.h; sourceTree = "<group>"; };
+		B267F85D20C53C9600B0CC4C /* JobsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsListViewController.m; sourceTree = "<group>"; };
+		B2DC8D4520C53E08002590B4 /* JobItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobItem.h; sourceTree = "<group>"; };
+		B2DC8D4620C53E08002590B4 /* JobItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobItem.m; sourceTree = "<group>"; };
+		B2DC8D4820C53F2E002590B4 /* JobsListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsListViewModel.h; sourceTree = "<group>"; };
+		B2DC8D4920C53F2E002590B4 /* JobsListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsListViewModel.m; sourceTree = "<group>"; };
+		B2DC8D4E20C54BA4002590B4 /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		B2DC8D4F20C54BA4002590B4 /* NetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		B2DC8D5120C5685F002590B4 /* JobDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobDetailsViewController.h; sourceTree = "<group>"; };
+		B2DC8D5220C5685F002590B4 /* JobDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobDetailsViewController.m; sourceTree = "<group>"; };
+		B2DC8D5420C569E1002590B4 /* JobViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobViewModel.h; sourceTree = "<group>"; };
+		B2DC8D5520C569E1002590B4 /* JobViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobViewModel.m; sourceTree = "<group>"; };
+		B2DC8D5820C5F236002590B4 /* CacheService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheService.h; sourceTree = "<group>"; };
+		B2DC8D5920C5F236002590B4 /* CacheService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheService.m; sourceTree = "<group>"; };
+		B2DC8D5D20C674C0002590B4 /* JobListViewModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobListViewModelTests.m; sourceTree = "<group>"; };
+		B2DC8D6320C67D50002590B4 /* job_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = job_list.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B25409B520C53D810080CE68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B267F84120C53C6000B0CC4C /* Assets.xcassets */,
+				B267F84320C53C6000B0CC4C /* LaunchScreen.storyboard */,
+				B267F84620C53C6000B0CC4C /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		B267F82C20C53C5F00B0CC4C = {
 			isa = PBXGroup;
 			children = (
@@ -81,15 +113,11 @@
 		B267F83720C53C5F00B0CC4C /* GithubJobs */ = {
 			isa = PBXGroup;
 			children = (
-				B267F83820C53C5F00B0CC4C /* AppDelegate.h */,
-				B267F83920C53C5F00B0CC4C /* AppDelegate.m */,
-				B267F83B20C53C5F00B0CC4C /* ViewController.h */,
-				B267F83C20C53C5F00B0CC4C /* ViewController.m */,
-				B267F83E20C53C5F00B0CC4C /* Main.storyboard */,
-				B267F84120C53C6000B0CC4C /* Assets.xcassets */,
-				B267F84320C53C6000B0CC4C /* LaunchScreen.storyboard */,
-				B267F84620C53C6000B0CC4C /* Info.plist */,
-				B267F84720C53C6000B0CC4C /* main.m */,
+				B2DC8D4D20C54B88002590B4 /* Services */,
+				B267F86220C53CC200B0CC4C /* Common */,
+				B267F86120C53CA900B0CC4C /* Models */,
+				B267F86020C53CA200B0CC4C /* Modules */,
+				B25409B520C53D810080CE68 /* Resources */,
 			);
 			path = GithubJobs;
 			sourceTree = "<group>";
@@ -97,10 +125,80 @@
 		B267F85020C53C6000B0CC4C /* GithubJobsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B267F85120C53C6000B0CC4C /* GithubJobsTests.m */,
+				B2DC8D6220C67D2C002590B4 /* Resources */,
+				B2DC8D5D20C674C0002590B4 /* JobListViewModelTests.m */,
 				B267F85320C53C6000B0CC4C /* Info.plist */,
 			);
 			path = GithubJobsTests;
+			sourceTree = "<group>";
+		};
+		B267F86020C53CA200B0CC4C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC8D4C20C54071002590B4 /* Job Details */,
+				B2DC8D4B20C54061002590B4 /* Jobs List */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		B267F86120C53CA900B0CC4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC8D4520C53E08002590B4 /* JobItem.h */,
+				B2DC8D4620C53E08002590B4 /* JobItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B267F86220C53CC200B0CC4C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B267F83820C53C5F00B0CC4C /* AppDelegate.h */,
+				B267F83920C53C5F00B0CC4C /* AppDelegate.m */,
+				B267F84720C53C6000B0CC4C /* main.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		B2DC8D4B20C54061002590B4 /* Jobs List */ = {
+			isa = PBXGroup;
+			children = (
+				B267F85C20C53C9600B0CC4C /* JobsListViewController.h */,
+				B267F85D20C53C9600B0CC4C /* JobsListViewController.m */,
+				B2DC8D4820C53F2E002590B4 /* JobsListViewModel.h */,
+				B2DC8D4920C53F2E002590B4 /* JobsListViewModel.m */,
+			);
+			name = "Jobs List";
+			sourceTree = "<group>";
+		};
+		B2DC8D4C20C54071002590B4 /* Job Details */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC8D5120C5685F002590B4 /* JobDetailsViewController.h */,
+				B2DC8D5220C5685F002590B4 /* JobDetailsViewController.m */,
+				B2DC8D5420C569E1002590B4 /* JobViewModel.h */,
+				B2DC8D5520C569E1002590B4 /* JobViewModel.m */,
+			);
+			name = "Job Details";
+			sourceTree = "<group>";
+		};
+		B2DC8D4D20C54B88002590B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC8D4E20C54BA4002590B4 /* NetworkService.h */,
+				B2DC8D4F20C54BA4002590B4 /* NetworkService.m */,
+				B2DC8D5820C5F236002590B4 /* CacheService.h */,
+				B2DC8D5920C5F236002590B4 /* CacheService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		B2DC8D6220C67D2C002590B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC8D6320C67D50002590B4 /* job_list.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +253,6 @@
 					};
 					B267F84C20C53C6000B0CC4C = {
 						CreatedOnToolsVersion = 9.4;
-						TestTargetID = B267F83420C53C5F00B0CC4C;
 					};
 				};
 			};
@@ -185,7 +282,6 @@
 			files = (
 				B267F84520C53C6000B0CC4C /* LaunchScreen.storyboard in Resources */,
 				B267F84220C53C6000B0CC4C /* Assets.xcassets in Resources */,
-				B267F84020C53C5F00B0CC4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2DC8D6420C67D50002590B4 /* job_list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B267F83D20C53C5F00B0CC4C /* ViewController.m in Sources */,
+				B2DC8D5620C569E1002590B4 /* JobViewModel.m in Sources */,
+				B267F85E20C53C9600B0CC4C /* JobsListViewController.m in Sources */,
+				B2DC8D4A20C53F2E002590B4 /* JobsListViewModel.m in Sources */,
+				B2DC8D4720C53E08002590B4 /* JobItem.m in Sources */,
 				B267F84820C53C6000B0CC4C /* main.m in Sources */,
+				B2DC8D5A20C5F236002590B4 /* CacheService.m in Sources */,
+				B2DC8D5320C5685F002590B4 /* JobDetailsViewController.m in Sources */,
+				B2DC8D5020C54BA4002590B4 /* NetworkService.m in Sources */,
 				B267F83A20C53C5F00B0CC4C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B267F85220C53C6000B0CC4C /* GithubJobsTests.m in Sources */,
+				B2DC8D5E20C674C0002590B4 /* JobListViewModelTests.m in Sources */,
+				B2DC8D6120C67515002590B4 /* JobItem.m in Sources */,
+				B2DC8D5F20C6750C002590B4 /* NetworkService.m in Sources */,
+				B2DC8D6020C6750E002590B4 /* CacheService.m in Sources */,
+				B2DC8D5720C569E7002590B4 /* JobsListViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,14 +335,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B267F83E20C53C5F00B0CC4C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B267F83F20C53C5F00B0CC4C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B267F84320C53C6000B0CC4C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K2Z2624US;
 				INFOPLIST_FILE = GithubJobs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K2Z2624US;
 				INFOPLIST_FILE = GithubJobs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +495,6 @@
 		B267F85A20C53C6000B0CC4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K2Z2624US;
 				INFOPLIST_FILE = GithubJobsTests/Info.plist;
@@ -406,14 +506,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gm.GithubJobsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubJobs.app/GithubJobs";
 			};
 			name = Debug;
 		};
 		B267F85B20C53C6000B0CC4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K2Z2624US;
 				INFOPLIST_FILE = GithubJobsTests/Info.plist;
@@ -425,7 +523,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gm.GithubJobsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubJobs.app/GithubJobs";
 			};
 			name = Release;
 		};

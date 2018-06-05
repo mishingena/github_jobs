@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JobsListViewController.h
 //  GithubJobs
 //
 //  Created by Gena on 04.06.2018.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JobsListViewController : UITableViewController
 
 @end
-
